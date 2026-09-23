@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string name;
+    int mark1, mark2, mark3;
+    float average;
+
+    cout << "Enter student name: ";
+    cin >> name;
+
+    cout << "Enter marks for 3 subjects: ";
+    cin >> mark1 >> mark2 >> mark3;
+
+    average = (mark1 + mark2 + mark3) / 3.0;
+
+    cout << "\nStudent Name: " << name << endl;
+    cout << "Average Mark: " << average << endl;
+
+    if (average >= 50)
+        cout << "Result: Pass" << endl;
+    else
+        cout << "Result: Fail" << endl;
+
+    return 0;
+}
